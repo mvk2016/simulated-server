@@ -6,11 +6,14 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var sockets = [];
 
+var gen = require('./generatingjson.js');
+gen.start();
+console.log(gen.propertyList);
+
+
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/geojson.json');
 });
-
-
 
 io.on('connection', function(socket){
         sockets.push(socket);
@@ -27,7 +30,7 @@ setInterval(spewData, 1000);
 
 function spewData () {
     sockets.map(function(socket){
-        socket.emit('event', {for: 'everyone'});
+        socket.emit('event', {for: "everyone"});
     });
 
 }
