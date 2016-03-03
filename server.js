@@ -8,11 +8,11 @@ var sockets = [];
 
 var gen = require('./generatingjson.js');
 gen.start();
-console.log(gen.propertyList);
+var list = gen.propertyList;
 
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/geojson.json');
+    res.sendFile(__dirname + '/geo.json');
 });
 
 io.on('connection', function(socket){
@@ -30,7 +30,7 @@ setInterval(spewData, 1000);
 
 function spewData () {
     sockets.map(function(socket){
-        socket.emit('event', {for: "everyone"});
+        socket.emit('event', list[gen.getRandomInt(0, list.length - 1)]);
     });
 
 }
