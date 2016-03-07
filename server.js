@@ -10,12 +10,9 @@ var getRandomInt = require('./randint');
 
 var sockets = [];
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});
-
-app.use(function(req, res) {
+app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
+  next();
 });
 
 app.get('/api/floors/testfloor', function(req, res) {
@@ -35,7 +32,6 @@ io.on('connection', function(socket){
     console.log(sockets.length)
   });
 });
-
 
 function spewData() {
   sockets.map(function(socket){
