@@ -10,9 +10,20 @@ var getRandomInt = require('./randint');
 
 var sockets = [];
 
-
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
+});
+
+app.use(function(req, res) {
+  res.header('Access-Control-Allow-Origin', '*')
+});
+
+app.get('/api/floors/testfloor', function(req, res) {
+  res.sendFile(__dirname + '/geo.json')
+});
+
+app.get('/api/floors/testfloor/:roomid/history', function(req, res) {
+  res.sendFile(__dirname + '/history.json')
 });
 
 io.on('connection', function(socket){
@@ -32,8 +43,8 @@ function spewData() {
   });
 }
 
-http.listen(8000, function(){
-  console.log('listening to port 8000');
+http.listen(8001, function(){
+  console.log('listening to port 8001');
 });
 
 setInterval(spewData, 1000);

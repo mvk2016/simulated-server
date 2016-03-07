@@ -3,8 +3,8 @@ var moment = require('moment');
 var getRandomInt = require('./randint');
 
 var parsedJson = JSON.parse(require('fs').readFileSync('./geo.json', 'utf8'));
-var roomIds = parsedJson.features.map(function(item){
-  return item.properties.roomId;
+var roomids = parsedJson.features.map(function(item){
+  return item.properties.roomid;
 });
 
 var propertyList = []
@@ -15,7 +15,8 @@ for (var i = 0; i <= 40; i++) {
 
 function generate() {
   var obj;
-  var id = roomIds[getRandomInt(0, roomIds.length - 1)];
+  var roomid = roomids[getRandomInt(0, roomids.length - 1)];
+  console.log(roomid);
   var type = Math.random();
   var rand = Math.random();
   if(type > 0.5) {
@@ -24,7 +25,7 @@ function generate() {
     else           temp -= (rand * 10);
 
     obj = {
-      "roomId": id,
+      "roomid": roomid,
       "data": {
         "name": "temperature",
         "value": temp,
@@ -38,7 +39,7 @@ function generate() {
     else           humidity -= (rand);
 
     obj = {
-      "roomId": id,
+      "roomid": roomid,
       "data": {
           "name": "humidity",
           "value": humidity,
