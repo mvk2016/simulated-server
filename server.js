@@ -15,11 +15,11 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/api/floors/testfloor', function(req, res) {
+app.get('/api/floors/:floorid', function(req, res) {
   res.sendFile(__dirname + '/geo.json')
 });
 
-app.get('/api/floors/testfloor/:roomid/history', function(req, res) {
+app.get('/api/floors/:floorid/:roomid/history', function(req, res) {
   res.sendFile(__dirname + '/history.json')
 });
 
