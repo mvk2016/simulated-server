@@ -1,12 +1,12 @@
 /**
  * Created by Johan on 2016-02-29.
  */
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var app   = require('express')();
+var http  = require('http').Server(app);
+var io    = require('socket.io')(http);
 
 var change = require('./generatingjson');
-var humlist = require('./generatingjson').humList;
+
 
 
 var sockets = [];
@@ -22,7 +22,7 @@ app.get('/api/floors/:floorid', function(req, res) {
 });
 
 app.get('/api/floors/:floorid/:roomid/history', function(req, res) {
-  res.sendFile(__dirname + '/history.json')
+  res.send(change.historic())
 });
 
 io.on('connection', function(socket){
@@ -39,7 +39,6 @@ function spewData() {
   sockets.map(function(socket){
     var obj = change.generate();
     socket.emit('event', obj);
-    console.log(obj);
   });
 }
 
