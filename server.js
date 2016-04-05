@@ -5,8 +5,9 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-var list = require('./generatingjson');
-var getRandomInt = require('./randint');
+var change = require('./generatingjson');
+var humlist = require('./generatingjson').humList;
+
 
 var sockets = [];
 
@@ -16,6 +17,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/api/floors/:floorid', function(req, res) {
+
   res.sendFile(__dirname + '/geo.json')
 });
 
@@ -35,7 +37,9 @@ io.on('connection', function(socket){
 
 function spewData() {
   sockets.map(function(socket){
-    socket.emit('event', list[getRandomInt(0, list.length - 1)]);
+    var obj = change.generate();
+    socket.emit('event', obj);
+    console.log(obj);
   });
 }
 
