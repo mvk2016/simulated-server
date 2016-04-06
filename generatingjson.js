@@ -68,11 +68,11 @@ function historic() {
    historicObj =
     {
       "labels": [
-        "" + tempList[tempList.length - 5],
-        "" + tempList[tempList.length - 4],
-        "" + tempList[tempList.length - 3],
-        "" + tempList[tempList.length - 2],
-        "" + tempList[tempList.length - 1]
+        tempList[tempList.length - 5].time,
+        tempList[tempList.length - 4].time,
+        tempList[tempList.length - 3].time,
+        tempList[tempList.length - 2].time,
+        tempList[tempList.length - 1].time
       ],
       "datasets": [
         {

@@ -22,7 +22,9 @@ app.get('/api/floors/:floorid', function(req, res) {
 });
 
 app.get('/api/floors/:floorid/:roomid/history', function(req, res) {
+  console.log(change.historic());
   res.send(change.historic())
+
 });
 
 io.on('connection', function(socket){
