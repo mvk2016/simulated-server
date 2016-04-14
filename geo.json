@@ -17,7 +17,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 50},
+          {"name": "currentutilization",
+          "value": 14}
         ]
       },
       "geometry": {
@@ -80,7 +84,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 20},
+          {"name": "currentutilization",
+            "value": 14}
         ]
       },
       "geometry": {
@@ -127,7 +135,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 10},
+          {"name": "currentutilization",
+            "value": 4}
         ]
           },
       "geometry": {
@@ -174,7 +186,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 10},
+          {"name": "currentutilization",
+            "value": 3}
         ]
       },
       "geometry": {
@@ -221,7 +237,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 15},
+          {"name": "currentutilization",
+            "value": 14}
         ]
       },
       "geometry": {
@@ -272,7 +292,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+            "value": 45},
+          {"name": "currentutilization",
+            "value": 23}
         ]
       },
       "geometry": {
@@ -319,7 +343,11 @@
             "lastupdate": "2012-04-23T18:25:43.511Z"},
           {"name": "humidity",
             "value": 0.1,
-            "lastupdate": "2012-04-23T18:25:43.511Z"}
+            "lastupdate": "2012-04-23T18:25:43.511Z"},
+          {"name": "maxutilization",
+           "value": 24},
+          {"name": "currentutilization",
+            "value": 14}
         ]
       },
       "geometry": {
