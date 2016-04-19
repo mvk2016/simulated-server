@@ -7,8 +7,6 @@ var io    = require('socket.io')(http);
 
 var change = require('./generatingjson');
 
-
-
 var sockets = [];
 
 app.use(function(req, res, next) {
