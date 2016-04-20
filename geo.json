@@ -4,11 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "001",
         "name": "Atrium",
         "data": [
@@ -71,11 +66,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "002",
         "name": "Excercise Room #3",
         "data": [
@@ -122,11 +112,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "003",
         "name": "Excercise Room #2",
         "data": [
@@ -173,11 +158,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "004",
         "name": "Excercise Room #1",
         "data": [
@@ -224,11 +204,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "005",
         "name": "Excercise Room #4",
         "data": [
@@ -279,11 +254,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "006",
         "name": "Seminar Room #1",
         "data": [
@@ -330,11 +300,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#00ff40",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#00ff40",
-        "fill-opacity": 0.75,
         "roomid": "007",
         "name": "Bond Room",
         "data": [

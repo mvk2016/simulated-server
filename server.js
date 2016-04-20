@@ -14,12 +14,16 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/api/floors/:floorid', function(req, res) {
+app.get('/api/buildings/:buildingid/floors', function(req, res) {
+    res.send(['testfloor', 1,2,3]);
+});
+
+app.get('/api/buildings/:buildingid/floors/:floorid', function(req, res) {
 
   res.sendFile(__dirname + '/geo.json')
 });
 
-app.get('/api/floors/:floorid/:roomid/history', function(req, res) {
+app.get('/api/rooms/:roomid/history', function(req, res) {
   res.send(change.historic())
 });
 
